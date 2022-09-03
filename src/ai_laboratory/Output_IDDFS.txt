@@ -1,0 +1,22 @@
+run:
+Enter the number of nodes in the graph
+7
+Enter the adjacency matrix
+0 1 1 0 0 0 0
+0 0 0 1 1 0 0
+0 0 0 0 0 1 1
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+Enter the destination for the graph
+7
+
+At Depth 0
+1	
+At Depth 1
+1	2	3	
+At Depth 2
+1	2	4	5	3	6	7	
+Goal Found at depth 2
+BUILD SUCCESSFUL (total time: 1 minute 25 seconds)

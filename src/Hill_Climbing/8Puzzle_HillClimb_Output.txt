@@ -1,0 +1,464 @@
+run:
+=========================================
+initial problem state
+2  6  3  
+1  0  4  
+8  7  5  
+--------
+initial empty tile position: 1, 1
+initial fn (number of misplaced tiles): 5
+=========================================
+>========================================<
+cost/steps: 1
+-------------
+left state
+2  6  3  
+0  1  4  
+8  7  5  
+--------
+down state
+2  6  3  
+1  7  4  
+8  0  5  
+--------
+right state
+2  6  3  
+1  4  0  
+8  7  5  
+--------
+up state
+2  0  3  
+1  6  4  
+8  7  5  
+--------
+-------new state
+2  6  3  
+0  1  4  
+8  7  5  
+--------
+lowest fn: 5
+-------new state as going deeper
+2  6  3  
+0  1  4  
+8  7  5  
+--------
+empty tile position: 1, 0
+>========================================<
+cost/steps: 2
+-------------
+down state
+2  6  3  
+8  1  4  
+0  7  5  
+--------
+right state
+2  6  3  
+1  0  4  
+8  7  5  
+--------
+up state
+0  6  3  
+2  1  4  
+8  7  5  
+--------
+-------new state
+2  6  3  
+8  1  4  
+0  7  5  
+--------
+lowest fn: 4
+-------new state as going deeper
+2  6  3  
+8  1  4  
+0  7  5  
+--------
+empty tile position: 2, 0
+>========================================<
+cost/steps: 3
+-------------
+right state
+2  6  3  
+8  1  4  
+7  0  5  
+--------
+up state
+2  6  3  
+0  1  4  
+8  7  5  
+--------
+-------new state
+2  6  3  
+8  1  4  
+7  0  5  
+--------
+lowest fn: 3
+-------new state as going deeper
+2  6  3  
+8  1  4  
+7  0  5  
+--------
+empty tile position: 2, 1
+>========================================<
+cost/steps: 4
+-------------
+left state
+2  6  3  
+8  1  4  
+0  7  5  
+--------
+right state
+2  6  3  
+8  1  4  
+7  5  0  
+--------
+up state
+2  6  3  
+8  0  4  
+7  1  5  
+--------
+-------new state
+2  6  3  
+8  0  4  
+7  1  5  
+--------
+lowest fn: 3
+-------new state as going deeper
+2  6  3  
+8  0  4  
+7  1  5  
+--------
+empty tile position: 1, 1
+>========================================<
+cost/steps: 5
+-------------
+left state
+2  6  3  
+0  8  4  
+7  1  5  
+--------
+down state
+2  6  3  
+8  1  4  
+7  0  5  
+--------
+right state
+2  6  3  
+8  4  0  
+7  1  5  
+--------
+up state
+2  0  3  
+8  6  4  
+7  1  5  
+--------
+-------new state
+2  0  3  
+8  6  4  
+7  1  5  
+--------
+lowest fn: 3
+-------new state as going deeper
+2  0  3  
+8  6  4  
+7  1  5  
+--------
+empty tile position: 0, 1
+>========================================<
+cost/steps: 6
+-------------
+left state
+0  2  3  
+8  6  4  
+7  1  5  
+--------
+down state
+2  6  3  
+8  0  4  
+7  1  5  
+--------
+right state
+2  3  0  
+8  6  4  
+7  1  5  
+--------
+-------new state
+0  2  3  
+8  6  4  
+7  1  5  
+--------
+lowest fn: 2
+-------new state as going deeper
+0  2  3  
+8  6  4  
+7  1  5  
+--------
+empty tile position: 0, 0
+>========================================<
+cost/steps: 7
+-------------
+down state
+8  2  3  
+0  6  4  
+7  1  5  
+--------
+right state
+2  0  3  
+8  6  4  
+7  1  5  
+--------
+-------new state
+8  2  3  
+0  6  4  
+7  1  5  
+--------
+lowest fn: 3
+---stuck in local maxima---
+getting higher, not possible
+popped state from getting higher
+2  3  0  
+8  6  4  
+7  1  5  
+--------
+empty tile position: 0, 2
+>========================================<
+cost/steps: 8
+-------------
+left state
+2  0  3  
+8  6  4  
+7  1  5  
+--------
+down state
+2  3  4  
+8  6  0  
+7  1  5  
+--------
+-------new state
+2  3  4  
+8  6  0  
+7  1  5  
+--------
+lowest fn: 5
+---stuck in local maxima---
+getting higher, not possible
+popped state from getting higher
+2  6  3  
+0  8  4  
+7  1  5  
+--------
+empty tile position: 1, 0
+>========================================<
+cost/steps: 9
+-------------
+down state
+2  6  3  
+7  8  4  
+0  1  5  
+--------
+right state
+2  6  3  
+8  0  4  
+7  1  5  
+--------
+up state
+0  6  3  
+2  8  4  
+7  1  5  
+--------
+-------new state
+0  6  3  
+2  8  4  
+7  1  5  
+--------
+lowest fn: 4
+---stuck in local maxima---
+getting higher, not possible
+popped state from getting higher
+2  6  3  
+8  4  0  
+7  1  5  
+--------
+empty tile position: 1, 2
+>========================================<
+cost/steps: 10
+-------------
+left state
+2  6  3  
+8  0  4  
+7  1  5  
+--------
+down state
+2  6  3  
+8  4  5  
+7  1  0  
+--------
+up state
+2  6  0  
+8  4  3  
+7  1  5  
+--------
+-------new state
+2  6  3  
+8  4  5  
+7  1  0  
+--------
+---fn's are equal, found in local maxima---
+pop 1
+pop 2
+popped state from all equal fn
+2  6  3  
+8  1  4  
+7  5  0  
+--------
+empty tile position: 2, 2
+>========================================<
+cost/steps: 11
+-------------
+left state
+2  6  3  
+8  1  4  
+7  0  5  
+--------
+up state
+2  6  3  
+8  1  0  
+7  5  4  
+--------
+-------new state
+2  6  3  
+8  1  0  
+7  5  4  
+--------
+lowest fn: 5
+---stuck in local maxima---
+getting higher, not possible
+popped state from getting higher
+0  6  3  
+2  1  4  
+8  7  5  
+--------
+empty tile position: 0, 0
+>========================================<
+cost/steps: 12
+-------------
+down state
+2  6  3  
+0  1  4  
+8  7  5  
+--------
+right state
+6  0  3  
+2  1  4  
+8  7  5  
+--------
+-------new state
+6  0  3  
+2  1  4  
+8  7  5  
+--------
+lowest fn: 5
+---stuck in local maxima---
+getting higher, not possible
+popped state from getting higher
+2  6  3  
+1  7  4  
+8  0  5  
+--------
+empty tile position: 2, 1
+>========================================<
+cost/steps: 13
+-------------
+left state
+2  6  3  
+1  7  4  
+0  8  5  
+--------
+right state
+2  6  3  
+1  7  4  
+8  5  0  
+--------
+up state
+2  6  3  
+1  0  4  
+8  7  5  
+--------
+-------new state
+2  6  3  
+1  7  4  
+0  8  5  
+--------
+lowest fn: 5
+---stuck in local maxima---
+getting higher, not possible
+popped state from getting higher
+2  0  3  
+1  6  4  
+8  7  5  
+--------
+empty tile position: 0, 1
+>========================================<
+cost/steps: 14
+-------------
+left state
+0  2  3  
+1  6  4  
+8  7  5  
+--------
+down state
+2  6  3  
+1  0  4  
+8  7  5  
+--------
+right state
+2  3  0  
+1  6  4  
+8  7  5  
+--------
+-------new state
+0  2  3  
+1  6  4  
+8  7  5  
+--------
+lowest fn: 4
+---stuck in local maxima---
+getting higher, not possible
+popped state from getting higher
+2  6  3  
+1  4  0  
+8  7  5  
+--------
+empty tile position: 1, 2
+>========================================<
+cost/steps: 15
+-------------
+left state
+2  6  3  
+1  0  4  
+8  7  5  
+--------
+down state
+2  6  3  
+1  4  5  
+8  7  0  
+--------
+up state
+2  6  0  
+1  4  3  
+8  7  5  
+--------
+-------new state
+2  6  3  
+1  4  5  
+8  7  0  
+--------
+---fn's are equal, found in local maxima---
+pop 1
+pop 2
+Goal can not be reached, found closest solution state
+---------solution state------with min fn 2
+0  2  3  
+8  6  4  
+7  1  5  
+--------
+BUILD SUCCESSFUL (total time: 0 seconds)

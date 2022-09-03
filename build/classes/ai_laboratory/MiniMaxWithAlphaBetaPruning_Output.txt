@@ -1,0 +1,51 @@
+run:
+Play TicTacToe! You are X!
+
+State of TicTacToe game -
+_ _ _ 
+_ _ _ 
+_ _ _ 
+It is X's turn. Enter row and column (1 indexed) -
+1
+1
+
+State of TicTacToe game -
+X _ _ 
+_ _ _ 
+_ _ _ 
+It is O's turn.
+
+State of TicTacToe game -
+X _ _ 
+_ O _ 
+_ _ _ 
+It is X's turn. Enter row and column (1 indexed) -
+2
+1
+
+State of TicTacToe game -
+X _ _ 
+X O _ 
+_ _ _ 
+It is O's turn.
+
+State of TicTacToe game -
+X _ _ 
+X O _ 
+O _ _ 
+It is X's turn. Enter row and column (1 indexed) -
+1
+2
+
+State of TicTacToe game -
+X X _ 
+X O _ 
+O _ _ 
+It is O's turn.
+Player O has won!
+
+State of TicTacToe game -
+X X O 
+X O _ 
+O _ _ 
+BUILD SUCCESSFUL (total time: 41 seconds)

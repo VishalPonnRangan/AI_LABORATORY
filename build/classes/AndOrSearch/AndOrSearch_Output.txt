@@ -1,0 +1,287 @@
+run:
+Print Nodes(current idx = 0)
+XYZ idx:0 strlen:3 from:0 to:[] state:UNKNOWN
+End
+Generated node: 
+	X idx:1 strlen:1 from:0 to:[] state:UNKNOWN
+
+Print Nodes(current idx = 1)
+XYZ idx:0 strlen:3 from:0 to:[1] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[] state:UNKNOWN
+End
+Generated node: 
+		ab idx:2 strlen:2 from:1 to:[] state:UNKNOWN
+
+Print Nodes(current idx = 2)
+XYZ idx:0 strlen:3 from:0 to:[1] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2] state:UNKNOWN
+		ab idx:2 strlen:2 from:1 to:[] state:UNKNOWN
+End
+Generated node: 
+			a idx:3 strlen:1 from:2 to:[] state:UNKNOWN
+
+Return to parent node:2
+Return to parent node:1
+Print Nodes(current idx = 1)
+XYZ idx:0 strlen:3 from:0 to:[1] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2] state:UNKNOWN
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+End
+Generated node: 
+		cY idx:4 strlen:2 from:1 to:[] state:UNKNOWN
+
+Print Nodes(current idx = 4)
+XYZ idx:0 strlen:3 from:0 to:[1] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:UNKNOWN
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[] state:UNKNOWN
+End
+Generated node: 
+			c idx:5 strlen:1 from:4 to:[] state:UNKNOWN
+
+"c" is found
+Return to parent node:4
+Print Nodes(current idx = 4)
+XYZ idx:0 strlen:3 from:0 to:[1] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:UNKNOWN
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5] state:UNKNOWN
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+End
+Generated node: 
+			Y idx:6 strlen:1 from:4 to:[] state:UNKNOWN
+
+Print Nodes(current idx = 6)
+XYZ idx:0 strlen:3 from:0 to:[1] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:UNKNOWN
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:UNKNOWN
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[] state:UNKNOWN
+End
+Generated node: 
+				a idx:7 strlen:1 from:6 to:[] state:UNKNOWN
+
+Return to parent node:6
+Print Nodes(current idx = 6)
+XYZ idx:0 strlen:3 from:0 to:[1] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:UNKNOWN
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:UNKNOWN
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7] state:UNKNOWN
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+End
+Generated node: 
+				c idx:8 strlen:1 from:6 to:[] state:UNKNOWN
+
+"c" is found
+Return to parent node:6
+Return to parent node:4
+Return to parent node:1
+Return to parent node:0
+Print Nodes(current idx = 0)
+XYZ idx:0 strlen:3 from:0 to:[1] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+End
+Generated node: 
+	Y idx:9 strlen:1 from:0 to:[] state:UNKNOWN
+
+Print Nodes(current idx = 9)
+XYZ idx:0 strlen:3 from:0 to:[1, 9] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+	Y idx:9 strlen:1 from:0 to:[] state:UNKNOWN
+End
+Generated node: 
+		a idx:10 strlen:1 from:9 to:[] state:UNKNOWN
+
+Return to parent node:9
+Print Nodes(current idx = 9)
+XYZ idx:0 strlen:3 from:0 to:[1, 9] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+	Y idx:9 strlen:1 from:0 to:[10] state:UNKNOWN
+		a idx:10 strlen:1 from:9 to:[] state:UNSOLVED
+End
+Generated node: 
+		c idx:11 strlen:1 from:9 to:[] state:UNKNOWN
+
+"c" is found
+Return to parent node:9
+Return to parent node:0
+Print Nodes(current idx = 0)
+XYZ idx:0 strlen:3 from:0 to:[1, 9] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+	Y idx:9 strlen:1 from:0 to:[10, 11] state:SOLVED
+		a idx:10 strlen:1 from:9 to:[] state:UNSOLVED
+		c idx:11 strlen:1 from:9 to:[] state:SOLVED
+End
+Generated node: 
+	Z idx:12 strlen:1 from:0 to:[] state:UNKNOWN
+
+Print Nodes(current idx = 12)
+XYZ idx:0 strlen:3 from:0 to:[1, 9, 12] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+	Y idx:9 strlen:1 from:0 to:[10, 11] state:SOLVED
+		a idx:10 strlen:1 from:9 to:[] state:UNSOLVED
+		c idx:11 strlen:1 from:9 to:[] state:SOLVED
+	Z idx:12 strlen:1 from:0 to:[] state:UNKNOWN
+End
+Generated node: 
+		Yc idx:13 strlen:2 from:12 to:[] state:UNKNOWN
+
+Print Nodes(current idx = 13)
+XYZ idx:0 strlen:3 from:0 to:[1, 9, 12] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+	Y idx:9 strlen:1 from:0 to:[10, 11] state:SOLVED
+		a idx:10 strlen:1 from:9 to:[] state:UNSOLVED
+		c idx:11 strlen:1 from:9 to:[] state:SOLVED
+	Z idx:12 strlen:1 from:0 to:[13] state:UNKNOWN
+		Yc idx:13 strlen:2 from:12 to:[] state:UNKNOWN
+End
+Generated node: 
+			Y idx:14 strlen:1 from:13 to:[] state:UNKNOWN
+
+Print Nodes(current idx = 14)
+XYZ idx:0 strlen:3 from:0 to:[1, 9, 12] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+	Y idx:9 strlen:1 from:0 to:[10, 11] state:SOLVED
+		a idx:10 strlen:1 from:9 to:[] state:UNSOLVED
+		c idx:11 strlen:1 from:9 to:[] state:SOLVED
+	Z idx:12 strlen:1 from:0 to:[13] state:UNKNOWN
+		Yc idx:13 strlen:2 from:12 to:[14] state:UNKNOWN
+			Y idx:14 strlen:1 from:13 to:[] state:UNKNOWN
+End
+Generated node: 
+				a idx:15 strlen:1 from:14 to:[] state:UNKNOWN
+
+Return to parent node:14
+Print Nodes(current idx = 14)
+XYZ idx:0 strlen:3 from:0 to:[1, 9, 12] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+	Y idx:9 strlen:1 from:0 to:[10, 11] state:SOLVED
+		a idx:10 strlen:1 from:9 to:[] state:UNSOLVED
+		c idx:11 strlen:1 from:9 to:[] state:SOLVED
+	Z idx:12 strlen:1 from:0 to:[13] state:UNKNOWN
+		Yc idx:13 strlen:2 from:12 to:[14] state:UNKNOWN
+			Y idx:14 strlen:1 from:13 to:[15] state:UNKNOWN
+				a idx:15 strlen:1 from:14 to:[] state:UNSOLVED
+End
+Generated node: 
+				c idx:16 strlen:1 from:14 to:[] state:UNKNOWN
+
+"c" is found
+Return to parent node:14
+Return to parent node:13
+Print Nodes(current idx = 13)
+XYZ idx:0 strlen:3 from:0 to:[1, 9, 12] state:UNKNOWN
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+	Y idx:9 strlen:1 from:0 to:[10, 11] state:SOLVED
+		a idx:10 strlen:1 from:9 to:[] state:UNSOLVED
+		c idx:11 strlen:1 from:9 to:[] state:SOLVED
+	Z idx:12 strlen:1 from:0 to:[13] state:UNKNOWN
+		Yc idx:13 strlen:2 from:12 to:[14] state:UNKNOWN
+			Y idx:14 strlen:1 from:13 to:[15, 16] state:SOLVED
+				a idx:15 strlen:1 from:14 to:[] state:UNSOLVED
+				c idx:16 strlen:1 from:14 to:[] state:SOLVED
+End
+Generated node: 
+			c idx:17 strlen:1 from:13 to:[] state:UNKNOWN
+
+"c" is found
+Return to parent node:13
+Return to parent node:12
+Return to parent node:0
+search end
+ solution graph
+Print Nodes(current idx = 0)
+XYZ idx:0 strlen:3 from:0 to:[1, 9, 12] state:SOLVED
+	X idx:1 strlen:1 from:0 to:[2, 4] state:SOLVED
+		ab idx:2 strlen:2 from:1 to:[3] state:UNSOLVED
+			a idx:3 strlen:1 from:2 to:[] state:UNSOLVED
+		cY idx:4 strlen:2 from:1 to:[5, 6] state:SOLVED
+			c idx:5 strlen:1 from:4 to:[] state:SOLVED
+			Y idx:6 strlen:1 from:4 to:[7, 8] state:SOLVED
+				a idx:7 strlen:1 from:6 to:[] state:UNSOLVED
+				c idx:8 strlen:1 from:6 to:[] state:SOLVED
+	Y idx:9 strlen:1 from:0 to:[10, 11] state:SOLVED
+		a idx:10 strlen:1 from:9 to:[] state:UNSOLVED
+		c idx:11 strlen:1 from:9 to:[] state:SOLVED
+	Z idx:12 strlen:1 from:0 to:[13] state:SOLVED
+		Yc idx:13 strlen:2 from:12 to:[14, 17] state:SOLVED
+			Y idx:14 strlen:1 from:13 to:[15, 16] state:SOLVED
+				a idx:15 strlen:1 from:14 to:[] state:UNSOLVED
+				c idx:16 strlen:1 from:14 to:[] state:SOLVED
+			c idx:17 strlen:1 from:13 to:[] state:SOLVED
+End
+search success
+ solution graph nodes obtained
+得られた文字列:ccccc
+BUILD SUCCESSFUL (total time: 0 seconds)

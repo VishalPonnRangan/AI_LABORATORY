@@ -1,0 +1,21 @@
+run:
+Size: 10	 Time: 2 
+Size: 20	 Time: 10 
+Size: 30	 Time: 21 
+Size: 40	 Time: 64 
+Size: 50	 Time: 93 
+Size: 60	 Time: 282 
+Size: 70	 Time: 370 
+Size: 80	 Time: 630 
+Size: 90	 Time: 864 
+Size: 100	 Time: 1257 
+Size: 110	 Time: 2093 
+Size: 120	 Time: 2591 
+Size: 130	 Time: 3567 
+Size: 140	 Time: 4850 
+Size: 150	 Time: 6345 
+Size: 160	 Time: 8019 
+Size: 170	 Time: 10208 
+Size: 180	 Time: 12731 
+Size: 190	 Time: 20229 
+BUILD SUCCESSFUL (total time: 1 minute 14 seconds)

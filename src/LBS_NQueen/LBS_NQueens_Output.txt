@@ -1,0 +1,93 @@
+run:
+Enter size of the board(N):
+4
+Enter number of iterations(X):
+4
+Enter number of tracking(K):
+4
+ITERATION 0:
+-----------
+
+XXXX
+XXXX
+XXQX
+QQXQ
+
+Score = 5
+-----------
+-----------
+
+XXXX
+QXXQ
+XXXX
+XQQX
+
+Score = 4
+-----------
+-----------
+
+QXXX
+XQQQ
+XXXX
+XXXX
+
+Score = 4
+-----------
+-----------
+
+XXQQ
+XXXX
+XXXX
+QQXX
+
+Score = 3
+-----------
+ITERATION 1
+-----------
+
+XXQQ
+QXXX
+XXXX
+XQXX
+
+Score = 1
+-----------
+-----------
+
+XXQX
+XXXX
+XXXQ
+QQXX
+
+Score = 1
+-----------
+-----------
+
+QXXX
+XXXQ
+XXXX
+XQQX
+
+Score = 2
+-----------
+-----------
+
+QXXX
+XXQQ
+XXXX
+XQXX
+
+Score = 2
+-----------
+
+-----------
+
+XXQX
+QXXX
+XXXQ
+XQXX
+
+Score = 0
+-----------
+SOLUTION(2 iterations)
+BUILD SUCCESSFUL (total time: 22 seconds)
